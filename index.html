@@ -5,50 +5,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <!-- <script src="test.js"></script> -->
-    <div id="header">
-        <h1>Петров Иван Петрович</h1>
-        <h3>Разнорабочий</h3>
-        <p>
-            <a href="mailto:petrovI@mail.ru">Email-адрес</a>,
-            <a href="https://vk.com/">Я Вконтакте</a>
-        </p>
-    </div>
-    <div id="main">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nulla quas, veritatis consectetur reiciendis deleniti sint, placeat tenetur quos cupiditate repellendus eveniet rerum nisi sapiente! Cum alias esse necessitatibus repellat.</p>
-        <h2>Опыт работы</h2>
-            <h3>ОАО "Армянский коньяк"</h3>  
-                <p>Наливатор коньяка в бочки, май 2017- июль 2017</p>
-                <ul> 
-                    <li>Наливал коньяк в бочки</li>
-                    <li>Выпивал коньяк из бочек</li>
-                    <li>Мыл бочки</li>
-                </ul>
-            <h3>ОсОО "Мордовский олень"</h3>  
-                <p>Дубильщик оленьих шкур, июль 2017- сентябрь 2017</p>
-                <ul> 
-                    <li>Мыл шкуры </li>
-                    <li>Сушил шкуры</li>
-                    <li>Выделывал шкуры</li>
-                </ul>
-        <h2>Образование</h2>
-            <h3>Средняя школа №6</h3>   
-            <p>Среднее образование (ударник), 1991-2016</p> 
-            <h3>Университет им. Кеннеди</h3>   
-            <p>Магистр по вылавливанию пуль головой, на скорости 20 миль в час, 2016-2017</p> 
-        <h2>Другие навыки и увлечения</h2>
-                <ul> 
-                    <li>Основы выпивки коньяка и сушки шкур</li>
-                    <li>Игра в шахматы</li>
-                    <li>Чтение исторических книг</li>
-                </ul>    
-    </div>
-    <div id="footer">
-        <p><b>Петров Иван Петрович</b></p>
-        <p>ул. Советская, 15, г.Фрунзе, СССР +7 443 888 80 80, <a href="mailto:petrovI@mail.ru">Email-адрес</a>,</p>
-    </div>
+<div class="hide-menu"></div>  
+<div id="main-page">
+
+    <section class="mm-menu">
+        <div class="container">
+            <div class="row">
+                <div class="mm-logo">
+                    <a href="index.html">
+                        <img src="images/asset-stack-logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="mm-nav">
+                    <div class="mm-toggle"> 
+                            <button class="mm-toggle__button">
+                                <span class="mm-toggle__button--bar"></span>
+                                <span class="mm-toggle__button--bar"></span>
+                                <span class="mm-toggle__button--bar"></span>
+                            </button>
+                    </div>
+                    <div class="mm-stat">
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Solution</a>
+                            </li>
+                            <li>
+                                <a href="">Team</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mm-demo">
+                    <a href="">dashboard demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">  
+        <div class="container">
+            <div class="row">
+                <div class="banner-text">
+                    <h1>Providing Token Sale Efficiency</h1>
+                    <p>Asset Stack is the next generation token sale management platform that helps global entrepreneurs attract funding for their projects, in a secure and compliant manner. <br>
+                            Build your stack within 48 hours!</p>
+                    <div class="banner-button">
+                        <a href="#contact">Start Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-image">
+        <img src="images/banner-image.png">
+        </div>
+    </section>
+    <section class="solutions">
+        <div class="container">
+            <div class="row">
+                <div class="solution-head">
+                    <h2>Solution</h2>
+                    <p>FLEXIBLE | SECURE | COMPLIANT</p>
+                </div>
+                <div class="solution-section">
+                    <div class="section-image">
+                        <img src="images/solution1.png">
+                    </div>
+                    <div class="section-text">
+                        <h4>All token types are welcome</h4>
+                        <p>Asset Stack helps to qualify your assets for the correct regulatory environment and relevant, active buyers. Whether you are looking to issue Security, Utility, or Digitized Asset tokens, Asset Stack will support your business model.</p>
+                    </div>
+                </div>
+                <div class="solution-section" id="reverse">
+                    <div class="section-image">
+                        <img src="images/solution2.png">
+                    </div>
+                    <div class="section-text">
+                        <h4>Global</h4>
+                        <p>Whether you’re selling your assets from San Francisco, Zug, Tokyo, or Malta, utilizing our platform will ensure that you are legally compliant. We’ll have you covered with region-specific localization based on where your token buyers reside. Asset Stack will support your sale globally.</p>
+                    </div>
+                </div>
+                <div class="solution-section">
+                            <div class="section-image">
+                                    <img src="images/solution3.png">
+                                </div>
+                                <div class="section-text">
+                                    <h4>Public and Private Sale Compliance</h4>
+                                    <p>Asset Stack stays on top of the latest KYC/AML procedures, preventing bad actors and residents of restricted countries from participating in your token sale. <br>
+                                            Do Reg D and subscription agreements determine how you conduct your roadshows? Asset Stack will help you by verifying all accredited investors on your behalf.</p>
+                                </div>
+                </div>
+                <div class="section-button">
+                    <a href="#contact">
+                        <span>Build Your Stack</span>
+                    </a>
+                    <p>Contact us and we’ll be thrilled to walk you through the process.</p>
+                </div>
+                <div class="solution-section" id="reverse">
+                        <div class="section-image">
+                                <img src="images/solution4.png">
+                            </div>
+                            <div class="section-text">
+                                <h4>FlexTech</h4>
+                                <p>Customize your token sale with a unique, flexible smart contract system that allows you to set:</p>
+                                <ul>
+                                    <li>flexible token sale bonuses and discounts</li>
+                                    <li>vesting periods and other sales parameters</li>
+                                    <li>dynamically adjusted asset prices to reflect demand</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="solution-section">
+                        <div class="section-image">
+                                <img src="images/solution5.png">
+                            </div>
+                            <div class="section-text">
+                                <h4>Customizable Design</h4>
+                                <p>Choose from a wide array of templates or create your own look and feel for your Asset Stack backend.</p>
+                            </div>
+                </div>
+                <div class="solution-section" id="reverse">
+                        <div class="section-image">
+                                <img src="images/solution6.png">
+                            </div>
+                            <div class="section-text">
+                                <h4>Security</h4>
+                                <ul>
+                                    <li>Stop worrying about DDoS Attacks by hosting your Asset Stack with our AWS cloud service</li>
+                                    <li>Prevent phishing by generating a unique contribution address for each asset buyer</li>
+                                    <li>Only allow admin access through a cold wallet or metamask authorization</li>
+                                    <li>Secure your assets with multisignature (multisig) transactions</li>
+                                </ul>
+                            </div>
+                </div>
+                <div class="solution-section">
+                        <div class="section-image">
+                                <img src="images/solution7.png">
+                            </div>
+                            <div class="section-text">
+                                <h4>Legal</h4>
+                                <p>Need legal advice? We partner with top legal experts in various jurisdictions and will be happy to introduce you to our network.</p>
+                            </div>
+                </div>
+                <div class="section-button">
+                        <a href="#contact">
+                            <span>Build Your Stack</span>
+                        </a>
+                        <p>Contact us and we’ll be thrilled to walk you through the process.</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="asset-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="asset-head">
+                        <div class="column">
+                            <h2>End-to-End Asset</h2>
+                            <p>A full-service platform enabling your token sale to be managed the way you want it to be; in a flexible, secure, and compliant manner. Other solutions simply don't stack up!</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="assets row">
+                        <div class="column">
+                            <div class="asset1">
+                                <img src="images/asset-icon1.png">
+                                <h4>Setup</h4>
+                                <p>A straightforward, intuitive, and highly customisable platform - token sales as they should be done.</p>
+                            </div>
+                        </div> 
+                        <div class="column">
+                            <div class="asset2">
+                                    <img src="images/asset-icon2.png">
+                                    <h4>Presale</h4>
+                                    <p>Easy to choose options, enabling the smooth and quick launch of your token presale.</p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="asset3">
+                                    <img src="images/asset-icon3.png">
+                                    <h4>Public Sale</h4>
+                                    <p>A comprehensive framework to ensure full legal compliance, regardless of token type.</p>
+                            </div>
+                        </div>    
+                        <div class="column">
+                            <div class="asset4">
+                                    <img src="images/asset-icon3.png">
+                                    <h4>Asset Distribution</h4>
+                                    <p>Exceptional security processes, safeguarding storage and transactions during asset distribution.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>    
+    </section>
+    <section class="our-team">
+        <div class="container">
+            <div class="row">
+                <div class="solution-head">
+                    <h2>Our Team</h2>
+                    <p>
+                            Our team consists only of pure specialists in their fields
+                        </p>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/1-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Sergei Gritsenko</h4>
+                            <p>Co-Founder and CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/2-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Oleg Poskotin</h4>
+                            <p>Co-Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/7-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Alexander Pavlov</h4>
+                            <p>Head Of Sales</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/3-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Aleksander Sharypin</h4>
+                            <p>Blockchain developer. EOS team lead</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/4-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Vlad Ignatov</h4>
+                            <p>Senior Blockchain Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/5-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Vasiliy Shakhunov</h4>
+                            <p>Senior Software Architect</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="member">
+                        <div class="photowrap">
+                            <a href="#pop-info1" class="team-info">
+                                <img src="images/6-s.jpg">
+                            </a>
+                            <a class="team-link" target="_blank" href="https://www.linkedin.com/in/olegposkotin/">
+                                <span>
+                                    in
+                                </span>
+                            </a>
+                            <h4>Dmitry Shramko</h4>
+                            <p>Senior Software Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
